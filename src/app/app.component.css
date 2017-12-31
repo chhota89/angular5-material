@@ -5,3 +5,27 @@
   .example-spacer {
     flex: 1 1 auto;
   }
+
+  .item-1{
+    background: lightblue
+  }
+
+
+  .item-2{
+    background: red
+  }
+
+
+  .item-3{
+    background: purple
+  }
+
+
+  .item-4{
+    background: yellowgreen
+  }
+
+
+  .item-5{
+    background: pink
+  }

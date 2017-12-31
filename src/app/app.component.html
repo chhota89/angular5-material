@@ -1,25 +1,10 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>MyMaterial</span>
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+  <div class="item-1" fxFlex="15%">Item 1</div>
+  <div class="item-2" fxFlex="20%" fxFlexOrder="3">Item 2</div>
+  <div class="item-3" fxFlex>Item 3</div>
+</div>
 
-    <span class="example-spacer"></span>
-    
-    <button mat-button>About</button>
-    <button mat-button>Services</button>
-    <button mat-button>Contact</button>
-  </mat-toolbar-row>
-</mat-toolbar>
-
-<mat-card>
-  <mat-form-field>
-    <input matInput [(ngModel)]="answer" placeholder="What's your name?">
-  </mat-form-field>
-
-  <br>
-  <button mat-raised-button (click)="showAnswer()">Answer me</button>
-  <mat-spinner [style.display]= "showSpinner?  'block' : 'none'"></mat-spinner>
-</mat-card>
-
-<mat-card *ngIf="answerDisplay">
-  <h1> {{ answerDisplay }} Thank you for visiting our site</h1>
-</mat-card>
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+  <div class="item-4" fxFlex fxFlexOffset="50px" fxFlexOffset.xs="0">Item 4</div>
+  <div class="item-5" fxFlex="200px">Item 5</div>
+</div>
