@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { AngularFireDatabase } from 'angularfire2/database';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,16 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  answer: string = '';
-  answerDisplay: string = '';
-  showSpinner: boolean = false;
-
-  showAnswer(){
-    this.showSpinner = true;
-
-    setTimeout(() => {
-      this.answerDisplay = this.answer;
-      this.showSpinner = false;
-    },5000)
+  constructor(db : AngularFireDatabase){
+    db.list('/tean_info').valueChanges().subscribe(console.log)
   }
 }
